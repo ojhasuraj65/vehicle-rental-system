@@ -1,4 +1,4 @@
-const Vehicle = require("../models/Vehicle");
+const Vehicle = require("../models/vehicle");
 
 // Get All Vehicles
 
