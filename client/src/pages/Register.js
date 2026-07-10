@@ -14,7 +14,7 @@ const registerUser = async()=>{
 
 try{
 
-const res = await fetch("http://localhost:5000/api/auth/register",{
+const res = await fetch("https://vehicle-rental-system-1-fca8.onrender.com/api/auth/register",{
 
 method:"POST",
 

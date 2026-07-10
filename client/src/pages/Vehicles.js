@@ -86,7 +86,7 @@ function Vehicles() {
 
       const orderRes = await fetch(
 
-        "http://localhost:5000/api/payment/create-order",
+        "/api/payment/create-ohttps://vehicle-rental-system-1-fca8.onrender.comrder",
 
         {
 
@@ -132,7 +132,7 @@ console.log("Amount:", amount);
 
           const bookingRes = await fetch(
 
-            "http://localhost:5000/api/booking/create",
+            "https://vehicle-rental-system-1-fca8.onrender.com/api/booking/create",
 
             {
 

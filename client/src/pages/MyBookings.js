@@ -26,7 +26,7 @@ function MyBookings() {
       return;
     }
 
-    fetch(`http://localhost:5000/api/booking/mybookings/${user._id}`)
+    fetch(`https://vehicle-rental-system-1-fca8.onrender.com/api/booking/mybookings/${user._id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Bookings:", data);
@@ -50,7 +50,7 @@ function MyBookings() {
     try {
 
       const res = await fetch(
-        `http://localhost:5000/api/booking/cancel/${id}`,
+        `https://vehicle-rental-system-1-fca8.onrender.com/api/booking/cancel/${id}`,
         {
           method: "DELETE"
         }
