@@ -85,28 +85,17 @@ function Vehicles() {
       const amount = parseInt(vehicle.price.replace(/[^\d]/g, "")) * 100;
 
       const orderRes = await fetch(
-
-        "/api/payment/create-ohttps://vehicle-rental-system-1-fca8.onrender.comrder",
-
-        {
-
-          method: "POST",
-
-          headers: {
-
-            "Content-Type": "application/json"
-
-          },
-
-          body: JSON.stringify({
-
-            amount
-
-          })
-
-        }
-
-      );
+  "https://vehicle-rental-system-1-fca8.onrender.com/api/payment/create-order",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      amount
+    })
+  }
+);
 
       const order = await orderRes.json();
       console.log("Order Response:", order);
